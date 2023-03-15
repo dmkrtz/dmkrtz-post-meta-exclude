@@ -6,10 +6,14 @@ GitHub Plugin URI: dmkrtz/dmkrtz-post-meta-exclude
 Author: dmkrtz
 Author URI: https://github.com/dmkrtz
 Description: Excludes categories or tags from post meta "the_category", "the_tags" actions.
-Version: 1.0.0
+Version: 1.0.1
 */
 
 function the_category_filter($thelist, $separator=' ') {
+	if(!is_single() && !is_page()) {
+		return $thelist;
+	}
+	
 	// check for ACF field in options-reading
 	$acf_exclude = get_field('exclude_categories_from_post_meta', 'options-reading');
 
