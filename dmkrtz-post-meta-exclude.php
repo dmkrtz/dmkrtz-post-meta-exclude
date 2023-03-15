@@ -3,6 +3,8 @@
 Plugin Name: dmkrtz Post Meta Exclude
 Plugin URI: https://github.com/dmkrtz/dmkrtz-post-meta-exclude
 GitHub Plugin URI: dmkrtz/dmkrtz-post-meta-exclude
+Author: dmkrtz
+Author URI: https://github.com/dmkrtz
 Description: Excludes categories or tags from post meta "the_category", "the_tags" actions.
 Version: 1.0.0
 */
